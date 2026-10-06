@@ -9,7 +9,7 @@ summary: Light-gated ion channels and optogenetics.
 laureates:
   - name: Karl Deisseroth
     born: "1971"
-    affiliation: Stanford University and Howard Hughes Medical Institute
+    affiliation: Howard Hughes Medical Institute and Stanford University
   - name: Peter Hegemann
     born: "1954"
     affiliation: Humboldt University of Berlin
@@ -137,6 +137,8 @@ shelf:
       evidence.
 
 sources:
+  - label: Nobel Prize press release
+    url: https://www.nobelprize.org/prizes/medicine/2026/press-release/
   - label: STAT
     url: https://www.statnews.com/2026/10/05/nobel-prize-medicine-2026-winner-deisseroth-hegemann-nagel/
   - label: NPR
@@ -148,8 +150,7 @@ sources:
   - label: Retinal Physician on the FDA review
     url: https://retinalphysician.com/news/2026/fda-accepts-mco-010-application
 
-todo:
-  - CHECK the citation wording against the Nobel press release; it was taken from STAT's report.
+todo: []
 ---
 
 A nerve cell fires when tiny gates in its outer membrane open and let charged atoms rush through. Peter Hegemann spent years on a question with no medical purpose at all: how does *Chlamydomonas*, a single-celled green alga, swim toward light? Working with Georg Nagel, he found the answer in a protein they named channelrhodopsin. It is a membrane gate that opens when light strikes it.

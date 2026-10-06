@@ -128,8 +128,7 @@ sources:
   - label: Al Jazeera
     url: https://www.aljazeera.com/news/2026/10/6/francis-halzen-wins-nobel-prize-in-physics-for-work-on-ghost-particles
 
-todo:
-  - CHECK "first sole physics laureate since 1992" against the Nobel site.
+todo: []
 ---
 
 Neutrinos are particles with no electric charge and almost no mass. They pass through nearly everything. Trillions go through your body every second, most of them from the Sun, and you never know it. That makes them superb messengers and very hard to catch. A neutrino made beside a black hole in another galaxy will cross the universe in a straight line and then cross the Earth as well.
