@@ -1,0 +1,123 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+import { inline, longDate } from '../../lib/md';
+
+export async function getStaticPaths() {
+  const prizes = await getCollection('prizes');
+  return prizes.map((entry) => ({
+    params: { year: String(entry.data.year), field: entry.data.field },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+const { Content } = await render(entry);
+const names = d.laureates.map((l) => l.name).join(', ');
+---
+
+<BaseLayout title={d.headline} description={`${d.prizeName} ${d.year}: ${names}. ${d.summary}`}>
+  <div class="page">
+    <article class="entry">
+      <a class="back" href="/#ledger">All prizes</a>
+
+      <header class="entry-head">
+        <p class="label">{d.prizeName} · announced {longDate(d.announced)}</p>
+        <h1>{d.headline}</h1>
+        <blockquote class="citation">“{d.citation}”</blockquote>
+        <ul class="laureates">
+          {d.laureates.map((l) => (
+            <li>
+              <b>{l.name}</b>{' '}
+              <span>
+                {l.born && `b. ${l.born} · `}
+                {l.affiliation}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </header>
+
+      <section class="part">
+        <h2>In plain terms</h2>
+        <div class="prose-plain">
+          <Content />
+        </div>
+        {d.timeline.length > 0 && (
+          <dl class="timeline">
+            {d.timeline.map((t) => (
+              <>
+                <dt>{t.when}</dt>
+                <dd set:html={inline(t.what)} />
+              </>
+            ))}
+          </dl>
+        )}
+      </section>
+
+      {d.checks.length > 0 && (
+        <section class="part">
+          <h2>Say it accurately</h2>
+          <dl class="checks">
+            {d.checks.map((c) => (
+              <div>
+                <dt set:html={inline(c.tempting)} />
+                <dd set:html={inline(c.accurate)} />
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
+
+      {d.preaching.length > 0 && (
+        <section class="part">
+          <h2>For preaching</h2>
+          <ul class="points">
+            {d.preaching.map((p) => (
+              <li>
+                <h3>
+                  {p.title}{' '}
+                  <span class:list={['tag', { instance: p.kind === 'instance' }]}>
+                    {p.kind === 'instance' ? 'Instance' : 'Likeness'}
+                  </span>
+                </h3>
+                <p class="refs">{p.refs.join(' · ')}</p>
+                <p set:html={inline(p.body)} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {d.shelf.length > 0 && (
+        <section class="part">
+          <h2>On the Wesleyan shelf</h2>
+          <ul class="points">
+            {d.shelf.map((s) => (
+              <li>
+                <h3>
+                  {s.url ? <a href={s.url}>{s.title}</a> : s.title}
+                  {s.note && <span class="note"> ({s.note})</span>}
+                </h3>
+                <p set:html={inline(s.body)} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {d.sources.length > 0 && (
+        <p class="sources">
+          Sources:{' '}
+          {d.sources.map((s, i) => (
+            <>
+              {i > 0 && ' · '}
+              <a href={s.url}>{s.label}</a>
+            </>
+          ))}
+        </p>
+      )}
+    </article>
+  </div>
+</BaseLayout>

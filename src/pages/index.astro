@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Ledger from '../components/Ledger.astro';
+import { getCollection } from 'astro:content';
+import { FIELD_LABEL, longDate } from '../lib/md';
+
+const entries = (await getCollection('prizes')).sort(
+  (a, b) => b.data.announced.getTime() - a.data.announced.getTime(),
+);
+---
+
+<BaseLayout>
+  <div class="page">
+    <header class="masthead">
+      <h1>Laureates for the Pulpit</h1>
+      <p class="lede">
+        Each October the Nobel committees name the work they judge to have mattered most. This site
+        explains that work in plain terms for pastors: what was found, how to say it accurately, and
+        where it meets preaching and teaching in the Wesleyan tradition.
+      </p>
+    </header>
+
+    <section class="written" aria-labelledby="written-h">
+      <h2 id="written-h">Entries</h2>
+      <ul>
+        {entries.map((e) => (
+          <li>
+            <p class="label">
+              {e.data.prizeName} · {longDate(e.data.announced)}
+            </p>
+            <a class="title" href={`/${e.data.year}/${e.data.field}/`}>{e.data.headline}</a>
+            <p class="who">{e.data.laureates.map((l) => l.name).join(', ')}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="key" aria-labelledby="key-h">
+      <h2 id="key-h">How an entry is built</h2>
+      <dl>
+        <dt>In plain terms</dt>
+        <dd>The discovery, without the research paper.</dd>
+        <dt>Say it accurately</dt>
+        <dd>Lines that are tempting from the pulpit, each paired with what the science supports.</dd>
+        <dt>For preaching</dt>
+        <dd>
+          Points of contact with Scripture. Each is marked one of two ways. A
+          <span class="tag">Likeness</span> borrows an image from the science and proves nothing by
+          it. An <span class="tag instance">Instance</span> is a true story that is itself a case of
+          what the text describes.
+        </dd>
+        <dt>On the Wesleyan shelf</dt>
+        <dd>
+          Where John Wesley handled the same matter, with the primary text named so you can read it
+          yourself.
+        </dd>
+      </dl>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="ledger" id="ledger" aria-labelledby="ledger-h">
+      <h2 id="ledger-h">The last ten years</h2>
+      <p class="note">
+        Prizes in physics, chemistry, medicine, economics and literature since 2016. Entries are
+        being written; those that are ready are linked.
+      </p>
+      <Ledger />
+    </section>
+  </div>
+</BaseLayout>

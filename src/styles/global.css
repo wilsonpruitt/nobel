@@ -1,0 +1,205 @@
+@import "tailwindcss";
+
+@theme {
+  --color-parchment: #FAF7F2;
+  --color-parchment-dark: #F0EBE1;
+  --color-ink: #2C2418;
+  --color-ink-light: #5C4D3C;
+  --color-gold: #8B6914;
+  --color-gold-light: #C49B2A;
+  --color-gold-pale: #F5EDD4;
+  --color-rule: #E2D8C3;
+
+  --font-serif: "EB Garamond", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+@layer base {
+  body {
+    font-size: 1.1875rem;
+    line-height: 1.55;
+  }
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+  }
+  h1, h2, h3, h4 {
+    font-weight: 500;
+    text-wrap: balance;
+  }
+  @media (max-width: 34rem) {
+    body { font-size: 1.125rem; }
+  }
+}
+
+@layer components {
+  .page {
+    max-width: 40rem;
+    margin-inline: auto;
+    padding-inline: 1.125rem;
+    padding-block: 2.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+  .page a { color: var(--color-gold); text-decoration: underline; text-underline-offset: 0.15em; }
+  .page a:hover { color: var(--color-gold-light); }
+
+  .label {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--color-ink-light);
+  }
+  .divider { border: 0; border-top: 1px solid var(--color-gold-light); }
+
+  /* Masthead */
+  .masthead { display: flex; flex-direction: column; gap: 1rem; border-bottom: 1px solid var(--color-gold-light); padding-bottom: 2rem; }
+  .masthead h1 { font-size: clamp(2.4rem, 8vw, 3.5rem); line-height: 1.05; letter-spacing: -0.01em; }
+  .lede { font-size: 1.3125rem; line-height: 1.45; }
+
+  /* Written entries on the index */
+  .written { display: flex; flex-direction: column; gap: 1.25rem; }
+  .written h2, .key h2 { font-size: 1.5rem; }
+  .written ul { display: flex; flex-direction: column; }
+  .written li { display: flex; flex-direction: column; gap: 0.25rem; padding-block: 1rem; border-top: 1px solid var(--color-rule); }
+  .written li a.title { font-size: 1.625rem; line-height: 1.2; text-decoration: none; color: var(--color-ink); }
+  .written li a.title:hover { color: var(--color-gold); }
+  .written li .who { font-size: 1.0625rem; color: var(--color-ink-light); }
+
+  /* How an entry is built */
+  .key { display: flex; flex-direction: column; gap: 1rem; }
+  .key dl { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 0.75rem 1.25rem; }
+  .key dt { font-family: var(--font-sans); font-size: 0.8125rem; font-weight: 600; padding-top: 0.3rem; }
+
+  .tag {
+    display: inline-block;
+    font-family: var(--font-sans);
+    font-size: 0.625rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 0.3rem 0.45rem;
+    border: 1px solid var(--color-gold-light);
+    color: var(--color-gold);
+    vertical-align: 0.15em;
+    white-space: nowrap;
+  }
+  .tag.instance { background: var(--color-gold); border-color: var(--color-gold); color: var(--color-parchment); }
+
+  /* Entry */
+  .entry { display: flex; flex-direction: column; gap: 2.25rem; }
+  .back { font-family: var(--font-sans); font-size: 0.875rem; }
+  .entry-head { display: flex; flex-direction: column; gap: 0.9rem; }
+  .entry-head h1 { font-size: clamp(1.9rem, 6vw, 2.6rem); line-height: 1.1; }
+  .citation {
+    padding: 1rem 1.25rem;
+    background: var(--color-gold-pale);
+    border-left: 3px solid var(--color-gold-light);
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .laureates { display: flex; flex-direction: column; gap: 0.2rem; }
+  .laureates li { font-size: 1.0625rem; }
+  .laureates b { font-weight: 600; }
+  .laureates span { color: var(--color-ink-light); }
+
+  .part { display: flex; flex-direction: column; gap: 1rem; }
+  .part > h2 {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-gold);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .prose-plain { display: flex; flex-direction: column; gap: 0.9rem; }
+
+  .timeline { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 0.4rem 1rem; font-size: 1.0625rem; }
+  .timeline dt { font-family: var(--font-sans); font-size: 0.8125rem; font-weight: 600; font-variant-numeric: tabular-nums; padding-top: 0.28rem; color: var(--color-ink-light); }
+
+  /* Depth gauge, to scale: 0 to 2,500 m. Used in the body of an entry. */
+  .gauge { display: flex; flex-direction: column; gap: 0.4rem; margin-top: 0.5rem; }
+  .gauge-track { position: relative; height: 1.5rem; background: var(--color-gold-pale); border: 1px solid var(--color-rule); }
+  .gauge-fill {
+    position: absolute; top: 0; bottom: 0; left: 58%; width: 40%;
+    background: repeating-linear-gradient(90deg, var(--color-gold-light) 0 2px, transparent 2px 7px);
+    border-inline: 1px solid var(--color-gold);
+  }
+  .gauge-labels { position: relative; height: 2.4rem; font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-ink-light); font-variant-numeric: tabular-nums; }
+  .gauge-labels span { position: absolute; top: 0; line-height: 1.25; }
+  .gauge-labels .g0 { left: 0; }
+  .gauge-labels .g1 { left: 58%; transform: translateX(-100%); padding-right: 0.4rem; text-align: right; }
+  .gauge-labels .g2 { right: 2%; text-align: right; }
+  .gauge figcaption { font-size: 1rem; color: var(--color-ink-light); }
+
+  /* Say it accurately */
+  .checks { display: flex; flex-direction: column; gap: 1.25rem; }
+  .checks > div { display: flex; flex-direction: column; gap: 0.3rem; }
+  .checks dt { font-style: italic; }
+  .checks dt::before,
+  .checks dd::before {
+    display: block;
+    font-style: normal;
+    font-family: var(--font-sans);
+    font-size: 0.625rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.15rem;
+  }
+  .checks dt::before { content: "Tempting"; color: var(--color-ink-light); }
+  .checks dd::before { content: "Accurate"; color: var(--color-gold); }
+
+  /* For preaching; On the Wesleyan shelf */
+  .points { display: flex; flex-direction: column; gap: 1.4rem; }
+  .points li { display: flex; flex-direction: column; gap: 0.35rem; }
+  .points h3 { font-size: 1.3125rem; line-height: 1.25; }
+  .points h3 .note { color: var(--color-ink-light); }
+  .refs { font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-ink-light); }
+
+  .sources { font-family: var(--font-sans); font-size: 0.8125rem; line-height: 1.6; color: var(--color-ink-light); }
+  .page .sources a { color: var(--color-ink-light); }
+
+  /* Ledger */
+  .ledger { display: flex; flex-direction: column; gap: 1.5rem; scroll-margin-top: 5rem; }
+  .ledger h2 { font-size: clamp(1.9rem, 6vw, 2.6rem); line-height: 1.1; }
+  .note { font-size: 1.0625rem; color: var(--color-ink-light); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .chips button {
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--color-gold-light);
+    background: transparent;
+    color: var(--color-ink);
+  }
+  .chips button:hover { background: var(--color-gold-pale); }
+  .chips button[aria-pressed="true"] { background: var(--color-gold); border-color: var(--color-gold); color: var(--color-parchment); }
+  .year { display: grid; grid-template-columns: 4rem minmax(0, 1fr); gap: 0 1rem; padding-block: 1rem; border-top: 1px solid var(--color-rule); }
+  .year > h3 { font-size: 1.5rem; font-variant-numeric: tabular-nums lining-nums; line-height: 1.2; }
+  .rows { display: flex; flex-direction: column; gap: 0.85rem; min-width: 0; }
+  .row { display: grid; grid-template-columns: 6.25rem minmax(0, 1fr); gap: 0 1rem; font-size: 1.0625rem; line-height: 1.4; }
+  .row .label { padding-top: 0.32rem; }
+  .row b { font-weight: 600; }
+  .row .sum { color: var(--color-ink-light); }
+  .row .done { font-family: var(--font-sans); font-size: 0.8125rem; font-weight: 600; white-space: nowrap; }
+
+  @media (max-width: 34rem) {
+    .key dl { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+    .key dd { margin-bottom: 0.7rem; }
+    .timeline { grid-template-columns: 5.25rem minmax(0, 1fr); }
+    .year { grid-template-columns: minmax(0, 1fr); gap: 0.6rem; }
+    .row { grid-template-columns: minmax(0, 1fr); }
+    .row .label { padding-top: 0; }
+  }
+}

@@ -1,0 +1,77 @@
+---
+import { getCollection } from 'astro:content';
+import ledger from '../data/ledger.json';
+import { FIELD_LABEL, FIELD_ORDER } from '../lib/md';
+
+// Written entries come from the collection; everything else from ledger.json.
+// A written entry replaces the ledger row for the same year and field.
+const written = await getCollection('prizes');
+const rows = [
+  ...written.map((e) => ({
+    year: e.data.year,
+    field: e.data.field as string,
+    laureates: e.data.laureates.map((l) => l.name).join(', '),
+    summary: e.data.summary,
+    href: `/${e.data.year}/${e.data.field}/`,
+  })),
+  ...ledger
+    .filter((r) => !written.some((e) => e.data.year === r.year && e.data.field === r.field))
+    .map((r) => ({ ...r, href: '' })),
+];
+
+const years = [...new Set(rows.map((r) => r.year))].sort((a, b) => b - a);
+const byYear = years.map((y) => ({
+  year: y,
+  rows: rows
+    .filter((r) => r.year === y)
+    .sort((a, b) => FIELD_ORDER.indexOf(a.field) - FIELD_ORDER.indexOf(b.field)),
+}));
+---
+
+<div class="chips" role="group" aria-label="Show one field">
+  <button type="button" data-f="all" aria-pressed="true">All fields</button>
+  {FIELD_ORDER.map((f) => (
+    <button type="button" data-f={f} aria-pressed="false">{FIELD_LABEL[f]}</button>
+  ))}
+</div>
+
+<div id="years">
+  {byYear.map((y) => (
+    <section class="year">
+      <h3>{y.year}</h3>
+      <div class="rows">
+        {y.rows.map((r) => (
+          <div class="row" data-field={r.field}>
+            <span class="label">{FIELD_LABEL[r.field]}</span>
+            <div>
+              <b>{r.laureates}</b>{' '}
+              <span class="sum">{r.summary}</span>{' '}
+              {r.href && <a class="done" href={r.href}>Read the entry</a>}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  ))}
+</div>
+
+<script>
+  const chips = document.querySelectorAll<HTMLButtonElement>('.chips button');
+  const years = document.querySelectorAll<HTMLElement>('#years .year');
+
+  chips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      const f = chip.dataset.f;
+      chips.forEach((c) => c.setAttribute('aria-pressed', c === chip ? 'true' : 'false'));
+      years.forEach((year) => {
+        let shown = 0;
+        year.querySelectorAll<HTMLElement>('.row').forEach((row) => {
+          const show = f === 'all' || row.dataset.field === f;
+          row.hidden = !show;
+          if (show) shown++;
+        });
+        year.hidden = shown === 0;
+      });
+    });
+  });
+</script>

@@ -1,0 +1,302 @@
+[
+  {
+    "year": 2025,
+    "field": "physics",
+    "laureates": "John Clarke, Michel Devoret, John Martinis",
+    "summary": "Quantum behaviour shown in an electrical circuit large enough to hold in the hand."
+  },
+  {
+    "year": 2025,
+    "field": "chemistry",
+    "laureates": "Susumu Kitagawa, Richard Robson, Omar Yaghi",
+    "summary": "Metal–organic frameworks: porous crystals that can trap gases and harvest water from air."
+  },
+  {
+    "year": 2025,
+    "field": "medicine",
+    "laureates": "Mary Brunkow, Fred Ramsdell, Shimon Sakaguchi",
+    "summary": "How regulatory T cells keep the immune system from attacking the body."
+  },
+  {
+    "year": 2025,
+    "field": "economics",
+    "laureates": "Joel Mokyr, Philippe Aghion, Peter Howitt",
+    "summary": "Why sustained economic growth began, and how innovation keeps it going through creative destruction."
+  },
+  {
+    "year": 2025,
+    "field": "literature",
+    "laureates": "László Krasznahorkai",
+    "summary": "Hungarian novelist of long, apocalyptic sentences and stubborn hope in art."
+  },
+  {
+    "year": 2024,
+    "field": "physics",
+    "laureates": "John Hopfield, Geoffrey Hinton",
+    "summary": "The artificial neural networks behind modern machine learning."
+  },
+  {
+    "year": 2024,
+    "field": "chemistry",
+    "laureates": "David Baker, Demis Hassabis, John Jumper",
+    "summary": "Designing new proteins by computer and predicting protein shapes with AI."
+  },
+  {
+    "year": 2024,
+    "field": "medicine",
+    "laureates": "Victor Ambros, Gary Ruvkun",
+    "summary": "MicroRNA, a small molecule that tunes which genes are active."
+  },
+  {
+    "year": 2024,
+    "field": "economics",
+    "laureates": "Daron Acemoglu, Simon Johnson, James Robinson",
+    "summary": "How a society’s institutions shape whether it prospers."
+  },
+  {
+    "year": 2024,
+    "field": "literature",
+    "laureates": "Han Kang",
+    "summary": "South Korean novelist of historical trauma and the fragility of human life."
+  },
+  {
+    "year": 2023,
+    "field": "physics",
+    "laureates": "Pierre Agostini, Ferenc Krausz, Anne L’Huillier",
+    "summary": "Flashes of light short enough to follow electrons moving."
+  },
+  {
+    "year": 2023,
+    "field": "chemistry",
+    "laureates": "Moungi Bawendi, Louis Brus, Aleksey Yekimov",
+    "summary": "Quantum dots: particles so small that their size sets their colour."
+  },
+  {
+    "year": 2023,
+    "field": "medicine",
+    "laureates": "Katalin Karikó, Drew Weissman",
+    "summary": "The modified mRNA that made the COVID-19 vaccines possible."
+  },
+  {
+    "year": 2023,
+    "field": "economics",
+    "laureates": "Claudia Goldin",
+    "summary": "Two centuries of women’s work and pay, and why gaps persist."
+  },
+  {
+    "year": 2023,
+    "field": "literature",
+    "laureates": "Jon Fosse",
+    "summary": "Norwegian playwright and novelist who gives voice to the unsayable."
+  },
+  {
+    "year": 2022,
+    "field": "physics",
+    "laureates": "Alain Aspect, John Clauser, Anton Zeilinger",
+    "summary": "Experiments proving that entangled particles stay linked across distance."
+  },
+  {
+    "year": 2022,
+    "field": "chemistry",
+    "laureates": "Carolyn Bertozzi, Morten Meldal, Barry Sharpless",
+    "summary": "Click chemistry: snapping molecules together simply, even inside living cells."
+  },
+  {
+    "year": 2022,
+    "field": "medicine",
+    "laureates": "Svante Pääbo",
+    "summary": "Reading the genomes of Neanderthals and other extinct human relatives."
+  },
+  {
+    "year": 2022,
+    "field": "economics",
+    "laureates": "Ben Bernanke, Douglas Diamond, Philip Dybvig",
+    "summary": "Why banks exist, why they fail, and why their failure deepens a crisis."
+  },
+  {
+    "year": 2022,
+    "field": "literature",
+    "laureates": "Annie Ernaux",
+    "summary": "French memoirist of class, shame and memory."
+  },
+  {
+    "year": 2021,
+    "field": "physics",
+    "laureates": "Syukuro Manabe, Klaus Hasselmann, Giorgio Parisi",
+    "summary": "Modelling Earth’s climate, and finding order in disordered systems."
+  },
+  {
+    "year": 2021,
+    "field": "chemistry",
+    "laureates": "Benjamin List, David MacMillan",
+    "summary": "Small organic molecules used as catalysts to build one mirror-image form of a compound."
+  },
+  {
+    "year": 2021,
+    "field": "medicine",
+    "laureates": "David Julius, Ardem Patapoutian",
+    "summary": "The receptors by which we feel heat, cold and touch."
+  },
+  {
+    "year": 2021,
+    "field": "economics",
+    "laureates": "David Card, Joshua Angrist, Guido Imbens",
+    "summary": "Using natural experiments to find cause and effect in the labour market."
+  },
+  {
+    "year": 2021,
+    "field": "literature",
+    "laureates": "Abdulrazak Gurnah",
+    "summary": "Tanzanian-born novelist of colonialism and the refugee’s fate."
+  },
+  {
+    "year": 2020,
+    "field": "physics",
+    "laureates": "Roger Penrose, Reinhard Genzel, Andrea Ghez",
+    "summary": "That black holes must form, and the giant one at the centre of our galaxy."
+  },
+  {
+    "year": 2020,
+    "field": "chemistry",
+    "laureates": "Emmanuelle Charpentier, Jennifer Doudna",
+    "summary": "CRISPR gene editing."
+  },
+  {
+    "year": 2020,
+    "field": "medicine",
+    "laureates": "Harvey Alter, Michael Houghton, Charles Rice",
+    "summary": "The discovery of the hepatitis C virus."
+  },
+  {
+    "year": 2020,
+    "field": "economics",
+    "laureates": "Paul Milgrom, Robert Wilson",
+    "summary": "Auction theory and the design of new kinds of auction."
+  },
+  {
+    "year": 2020,
+    "field": "literature",
+    "laureates": "Louise Glück",
+    "summary": "American poet of austere, personal lyric."
+  },
+  {
+    "year": 2019,
+    "field": "physics",
+    "laureates": "James Peebles, Michel Mayor, Didier Queloz",
+    "summary": "The theory of the cosmos after the Big Bang, and the first planet found around a sun-like star."
+  },
+  {
+    "year": 2019,
+    "field": "chemistry",
+    "laureates": "John Goodenough, Stanley Whittingham, Akira Yoshino",
+    "summary": "The lithium-ion battery."
+  },
+  {
+    "year": 2019,
+    "field": "medicine",
+    "laureates": "William Kaelin, Peter Ratcliffe, Gregg Semenza",
+    "summary": "How cells sense and adapt to the oxygen available."
+  },
+  {
+    "year": 2019,
+    "field": "economics",
+    "laureates": "Abhijit Banerjee, Esther Duflo, Michael Kremer",
+    "summary": "Field experiments to learn what actually reduces poverty."
+  },
+  {
+    "year": 2019,
+    "field": "literature",
+    "laureates": "Peter Handke",
+    "summary": "Austrian writer of linguistic invention; a contested award."
+  },
+  {
+    "year": 2018,
+    "field": "physics",
+    "laureates": "Arthur Ashkin, Gérard Mourou, Donna Strickland",
+    "summary": "Optical tweezers, and a way to make very short, intense laser pulses."
+  },
+  {
+    "year": 2018,
+    "field": "chemistry",
+    "laureates": "Frances Arnold, George Smith, Gregory Winter",
+    "summary": "Directed evolution: breeding enzymes and antibodies in the laboratory."
+  },
+  {
+    "year": 2018,
+    "field": "medicine",
+    "laureates": "James Allison, Tasuku Honjo",
+    "summary": "Releasing the immune system’s brakes to treat cancer."
+  },
+  {
+    "year": 2018,
+    "field": "economics",
+    "laureates": "William Nordhaus, Paul Romer",
+    "summary": "Bringing climate change and technological innovation into the economics of long-run growth."
+  },
+  {
+    "year": 2018,
+    "field": "literature",
+    "laureates": "Olga Tokarczuk",
+    "summary": "Polish novelist of border-crossing as a form of life. Awarded in 2019."
+  },
+  {
+    "year": 2017,
+    "field": "physics",
+    "laureates": "Rainer Weiss, Barry Barish, Kip Thorne",
+    "summary": "The first detection of gravitational waves."
+  },
+  {
+    "year": 2017,
+    "field": "chemistry",
+    "laureates": "Jacques Dubochet, Joachim Frank, Richard Henderson",
+    "summary": "Cryo-electron microscopy: seeing biological molecules frozen in action."
+  },
+  {
+    "year": 2017,
+    "field": "medicine",
+    "laureates": "Jeffrey Hall, Michael Rosbash, Michael Young",
+    "summary": "The molecular clock behind the daily rhythm of living things."
+  },
+  {
+    "year": 2017,
+    "field": "economics",
+    "laureates": "Richard Thaler",
+    "summary": "Behavioural economics: how real people depart from rational choice."
+  },
+  {
+    "year": 2017,
+    "field": "literature",
+    "laureates": "Kazuo Ishiguro",
+    "summary": "British novelist of memory, self-deception and loss."
+  },
+  {
+    "year": 2016,
+    "field": "physics",
+    "laureates": "David Thouless, Duncan Haldane, Michael Kosterlitz",
+    "summary": "Strange states of matter explained by the mathematics of shape."
+  },
+  {
+    "year": 2016,
+    "field": "chemistry",
+    "laureates": "Jean-Pierre Sauvage, Fraser Stoddart, Ben Feringa",
+    "summary": "Machines built from single molecules."
+  },
+  {
+    "year": 2016,
+    "field": "medicine",
+    "laureates": "Yoshinori Ohsumi",
+    "summary": "Autophagy: how cells break down and recycle their own parts."
+  },
+  {
+    "year": 2016,
+    "field": "economics",
+    "laureates": "Oliver Hart, Bengt Holmström",
+    "summary": "Contract theory: how agreements are designed when interests differ."
+  },
+  {
+    "year": 2016,
+    "field": "literature",
+    "laureates": "Bob Dylan",
+    "summary": "New poetic expression within the American song tradition."
+  }
+]
