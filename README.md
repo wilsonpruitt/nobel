@@ -2,7 +2,14 @@
 
 Recent Nobel Prizes explained in plain terms for pastors, with points of contact for preaching in the Wesleyan tradition. Intended home: https://nobel.wrootpress.com
 
-Astro, Tailwind (Vite plugin), static output. Deploys on Vercel with the Astro preset and no extra configuration.
+Astro, Tailwind (Vite plugin), static output. Live at https://nobel.wrootpress.com: Vercel project `nobel` (team `wilson-pruitts-projects`), deployed from the CLI. The project is not connected to git, so a commit or push does not deploy.
+
+```sh
+npx vercel build --prod
+npx vercel deploy --prebuilt --prod --scope wilson-pruitts-projects
+```
+
+A fresh checkout needs `npx vercel link --yes --project nobel --scope wilson-pruitts-projects` and `npx vercel pull --yes --environment production` once first. DNS is a Cloudflare CNAME to `cname.vercel-dns.com`, proxy off.
 
 ```sh
 npm install
