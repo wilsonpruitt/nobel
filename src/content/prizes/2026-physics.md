@@ -103,9 +103,9 @@ shelf:
   - title: The Imperfection of Human Knowledge
     note: sermon on 1 Corinthians 13:9
     body: >-
-      Wesley walks through the heavens, light and the elements to show how
-      little we understand even of what we can see, and he does it to teach
-      humility. A particle that passes through us by the trillion and went
+      Wesley walks through the heavens, light, the air and the earth to show
+      how little we understand even of what we can see. The first lesson he
+      draws is humility; the others are trust in God and resignation. A particle that passes through us by the trillion and went
       undetected until 1956 belongs in that sermon.
   - title: On the Discoveries of Faith
     note: sermon on Hebrews 11:1
@@ -129,8 +129,6 @@ sources:
     url: https://www.aljazeera.com/news/2026/10/6/francis-halzen-wins-nobel-prize-in-physics-for-work-on-ghost-particles
 
 todo:
-  - CHECK the Survey preface quotation against the printed text; the online text was read through an automated extract.
-  - CHECK the summaries of "The Imperfection of Human Knowledge" and "On the Discoveries of Faith" against the sermons; they were written from recollection.
   - CHECK "first sole physics laureate since 1992" against the Nobel site.
 ---
 

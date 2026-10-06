@@ -108,9 +108,11 @@ shelf:
     body: >-
       Wesley met the brain science of his own day in David Hartley, who traced
       every thought to vibrations in the fibres of the brain. His answer has two
-      halves, and they should be kept apart. He concedes that all the operations
-      of the soul now depend on the bodily organs, the brain in particular. He
-      refuses the conclusion drawn from it: *“I cannot believe the noblest
+      halves, and they should be kept apart. He concedes the dependence: *“who
+      can deny, that not only the memory, but all the operations of the soul,
+      are now dependent on the bodily organs, the brain in particular?”* (§IV.2).
+      He refuses the conclusion that every human action is therefore necessary.
+      The preface puts the refusal in one line: *“I cannot believe the noblest
       creature in the visible world to be only a fine piece of clock-work.”* A
       sermon on this prize can concede as much as he did.
   - title: Wandering Thoughts
@@ -118,7 +120,7 @@ shelf:
     url: https://ccel.org/ccel/wesley/sermons.v.xli.html
     body: >-
       *“Let but the blood move irregularly in the brain, and all regular
-      thinking is at an end.”* Wesley’s pastoral conclusion is that thoughts
+      thinking is at an end”* (§II.3). Wesley’s pastoral conclusion is that thoughts
       arising from a disordered body are not sin. When preaching near mental
       illness, the science supports a distinction he had already drawn. See also
       “Heaviness through Manifold Temptations” (1 Peter 1:6) and “Thoughts on
@@ -127,8 +129,9 @@ shelf:
     note: "1760"
     url: https://wesleyscholar.com/wp-content/uploads/2020/02/Electricity-Made-Plain-and-Useful-3rd-Edition-1790.pdf
     body: >-
-      In the 1750s Wesley obtained an electrical machine and offered treatment
-      to the poor. Stimulating the nerves with the newest physical technology,
+      In November 1756 Wesley procured an electrical apparatus and began
+      offering treatment to the sick, soon for an hour every day (Journal,
+      9 November 1756). Stimulating the nerves with the newest physical technology,
       for the sake of the sick, has a Methodist history. So does the caution
       that goes with it: his confidence in electricity ran ahead of the
       evidence.
@@ -146,9 +149,6 @@ sources:
     url: https://retinalphysician.com/news/2026/fda-accepts-mco-010-application
 
 todo:
-  - CHECK the two Wesley quotations (Thoughts upon Necessity; Wandering Thoughts) against the printed text and add section references.
-  - CHECK the paraphrase of Wesley's concession in Thoughts upon Necessity against the printed text.
-  - CHECK the date Wesley obtained his electrical machine (Journal, November 1756?) and cite it.
   - CHECK the citation wording against the Nobel press release; it was taken from STAT's report.
 ---
 
