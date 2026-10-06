@@ -31,8 +31,7 @@ const names = d.laureates.map((l) => l.name).join(', ');
             <li>
               <b>{l.name}</b>{' '}
               <span>
-                {l.born && `b. ${l.born} · `}
-                {l.affiliation}
+                {[l.born && `b. ${l.born}`, l.affiliation].filter(Boolean).join(' · ')}
               </span>
             </li>
           ))}
@@ -53,6 +52,27 @@ const names = d.laureates.map((l) => l.name).join(', ');
               </>
             ))}
           </dl>
+        )}
+        {d.works.length > 0 && (
+          <>
+            <h3 class="works-head">In English</h3>
+            <ul class="works">
+              {d.works.map((w) => (
+                <li>
+                  <i>{w.title}</i>
+                  {(w.original || w.year) && (
+                    <span> ({[w.original, w.year].filter(Boolean).join(', ')})</span>
+                  )}
+                  {(w.translator || w.english) && (
+                    <span class="meta">
+                      {' '}
+                      {[w.translator && `trans. ${w.translator}`, w.english].filter(Boolean).join(', ')}
+                    </span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </>
         )}
       </section>
 

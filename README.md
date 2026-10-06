@@ -27,6 +27,7 @@ npm run build    # dist/
 2. The Markdown body is the "In plain terms" prose. The other three parts (`checks`, `preaching`, `shelf`) are lists in the front matter, and their strings accept inline Markdown.
 3. Mark each preaching point `likeness` (an image borrowed from the science, which proves nothing) or `instance` (a true story that is itself a case of what the text describes).
 4. Put open editorial items in `todo:`. They are never rendered.
+5. For literature, leave out `affiliation` (writers usually have none) and list the main books in English under `works:` with original title, year, translator and year of the English edition. The list renders as "In English" under the plain-terms prose.
 
 The ledger row for that year and field is replaced by the written entry automatically. For a newly announced prize there is no ledger row to remove.
 

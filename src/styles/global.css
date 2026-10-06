@@ -123,6 +123,9 @@
   .prose-plain { display: flex; flex-direction: column; gap: 0.9rem; }
 
   .timeline { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 0.4rem 1rem; font-size: 1.0625rem; }
+  .works-head { font-family: var(--font-sans); font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-ink-light); margin-top: 0.5rem; }
+  .works { display: flex; flex-direction: column; gap: 0.3rem; font-size: 1.0625rem; }
+  .works .meta { color: var(--color-ink-light); }
   .timeline dt { font-family: var(--font-sans); font-size: 0.8125rem; font-weight: 600; font-variant-numeric: tabular-nums; padding-top: 0.28rem; color: var(--color-ink-light); }
 
   /* Depth gauge, to scale: 0 to 2,500 m. Used in the body of an entry. */

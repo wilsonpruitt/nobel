@@ -9,7 +9,17 @@ summary: Novels of collapse and terror, told in long unbroken sentences, that st
 laureates:
   - name: László Krasznahorkai
     born: "1954"
-    affiliation: Hungarian author; lives near Budapest
+
+works:
+  - { title: Satantango, original: Sátántangó, year: 1985, translator: George Szirtes, english: 2012 }
+  - { title: The Melancholy of Resistance, original: Az ellenállás melankóliája, year: 1989, translator: George Szirtes, english: 1998 }
+  - { title: War & War, original: Háború és háború, year: 1999, translator: George Szirtes, english: 2006 }
+  - { title: Seiobo There Below, original: Seiobo járt odalent, year: 2008, translator: Ottilie Mulzet, english: 2013 }
+  - { title: The World Goes On, original: Megy a világ, year: 2013, translator: "John Batki, Ottilie Mulzet and George Szirtes", english: 2017 }
+  - { title: Baron Wenckheim’s Homecoming, original: Báró Wenckheim hazatér, year: 2016, translator: Ottilie Mulzet, english: 2019 }
+  - { title: Spadework for a Palace, original: Aprómunka egy palotáért, year: 2018, translator: John Batki, english: 2020 }
+  - { title: Chasing Homer, original: Mindig Homérosznak, year: 2019, translator: John Batki, english: 2021 }
+  - { title: Herscht 07769, year: 2021, translator: Ottilie Mulzet, english: 2024 }
 
 timeline:
   - when: 1954–1980s
@@ -267,10 +277,10 @@ todo:
     (6 February 2026) is sourced.
 ---
 
-László Krasznahorkai is a Hungarian novelist, born in 1954 in Gyula, a small town near the Romanian border. His novels are set in places that are falling apart: a ruined collective farm in endless rain, a town in a Carpathian valley where a circus arrives with the carcass of a giant whale and riot follows, a town in eastern Germany where neo-Nazis and arson invade a quiet life. Con men are taken for saviours. Holy fools put their trust in the wrong people. Susan Sontag called him the “master of the apocalypse”. The committee places him in a Central European line that runs through Kafka to Thomas Bernhard, with absurdity and grotesque excess, but also with humour.
+László Krasznahorkai is a Hungarian novelist, born in 1954 in Gyula, a small town near the Romanian border. He lives near Budapest. His novels are set in places that are falling apart: a ruined collective farm in endless rain, a town in a Carpathian valley where a circus arrives with the carcass of a giant whale and riot follows, a town in eastern Germany where neo-Nazis and arson invade a quiet life. Con men are taken for saviours. Holy fools put their trust in the wrong people. Susan Sontag called him the “master of the apocalypse”. The committee places him in a Central European line that runs through Kafka to Thomas Bernhard, with absurdity and grotesque excess, but also with humour.
 
 What a reader notices first is the sentences. They wind on for pages without a full stop, building, doubling back, gathering speed. He says they come from speech: people who badly need to say something do not talk in short sentences. The effect is close to music, and it is hard work; you cannot skim him. Yet beauty keeps breaking in. Bach’s music sounds through *Herscht 07769*. In *Seiobo There Below* (2008) a white heron stands motionless in a Kyoto river while crowds pass without seeing it, and seventeen stories follow the making of art, from a Noh mask to a Renaissance painting, in a world the committee calls one “of blindness and impermanence”. One begins: “He already knew how to draw a Madonna even before he knew what a Madonna was” (trans. Ottilie Mulzet).
 
-In English his translators are George Szirtes (*Satantango*, *The Melancholy of Resistance*, *War & War*), Ottilie Mulzet (*Seiobo There Below*, *Baron Wenckheim’s Homecoming*, *Herscht 07769*) and John Batki (*Spadework for a Palace*, *Chasing Homer*), with New Directions as his American publisher. He also wrote the screenplays for Béla Tarr’s films with Tarr, among them *Satantango* (1994), *Werckmeister Harmonies* (2000) and *The Turin Horse* (2011).
+In English he has three main translators, George Szirtes, Ottilie Mulzet and John Batki, and New Directions is his American publisher; the main books are listed below. He also wrote the screenplays for Béla Tarr’s films with Tarr, among them *Satantango* (1994), *Werckmeister Harmonies* (2000) and *The Turin Horse* (2011).
 
 He is hard going, and nothing on this page should suggest otherwise. A pastor who has never read him should start with *Seiobo There Below*. It was the choice of Anders Olsson, who chairs the Nobel Committee, and a reviewer for NPR called it “brighter and more open” than the earlier novels and “an excellent introduction” to fiction that is “difficult but deeply rewarding”. Its chapters connect only loosely, so they can be read one at a time. Read slowly, and aloud if the sentences lose you.

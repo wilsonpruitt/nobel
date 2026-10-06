@@ -21,9 +21,22 @@ const prizes = defineCollection({
       z.object({
         name: z.string(),
         born: z.string().optional(),
-        affiliation: z.string(),
+        affiliation: z.string().optional(), // writers usually have none
       }),
     ),
+    // Books in English, for literature entries. `year` is the original
+    // publication, `english` the year of the English edition.
+    works: z
+      .array(
+        z.object({
+          title: z.string(),
+          original: z.string().optional(),
+          year: z.number().int().optional(),
+          translator: z.string().optional(),
+          english: z.number().int().optional(),
+        }),
+      )
+      .default([]),
     timeline: z.array(z.object({ when: z.string(), what: z.string() })).default([]),
     checks: z.array(z.object({ tempting: z.string(), accurate: z.string() })).default([]),
     preaching: z
