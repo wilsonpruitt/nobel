@@ -19,6 +19,7 @@ Opus, one subagent per prize, run one at a time on the 8 GB Mac: 140–200K toke
 > - `citation` is the committee's wording verbatim from the press release. Names, affiliations, birth years and the announcement date come from the press release or the laureate pages.
 > - Checks and timeline facts come from named reporting. Every URL in `sources` must be one you actually loaded. Never construct a URL. Quote a person only from text you read verbatim; if you saw it only through a summarising fetch, confirm it in the browser first.
 > - Say how far along any treatment or product is (trial phase, approved or not, planned or delivered). Never imply a cure. Keep economics even-handed.
+> - Peace: the committee's announcement is on nobelpeaceprize.org. Report what courts and the committee have done or said; take no side in disputes still running, and keep preaching points off national politics.
 >
 > WESLEY
 > - The corpus is in `~/wesley-corpus/cleaned/john-wesley/` (`sermon-NNN-*.txt`, `treatise-*`, `journal-*`, `letter-*`). Find passages with grep, and read with python slicing around the hits (ugrep chokes on `.{0,300}`). Never read whole large files. Don't use the `wesley-collected-works-vol-*` dumps or `chunked/`.
