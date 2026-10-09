@@ -11,9 +11,10 @@ export const FIELD_LABEL: Record<string, string> = {
   medicine: 'Medicine',
   economics: 'Economics',
   literature: 'Literature',
+  peace: 'Peace',
 };
 
-export const FIELD_ORDER = ['physics', 'chemistry', 'medicine', 'economics', 'literature'];
+export const FIELD_ORDER = ['physics', 'chemistry', 'medicine', 'economics', 'literature', 'peace'];
 
 export function longDate(d: Date): string {
   return d.toLocaleDateString('en-GB', {

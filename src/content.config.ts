@@ -1,7 +1,7 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
-export const FIELDS = ['physics', 'chemistry', 'medicine', 'economics', 'literature'] as const;
+export const FIELDS = ['physics', 'chemistry', 'medicine', 'economics', 'literature', 'peace'] as const;
 
 // One file per written entry, named `<year>-<field>.md`.
 // The Markdown body is the "In plain terms" prose. Everything else is

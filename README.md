@@ -30,7 +30,7 @@ npm run build    # dist/
 
 ## Adding an entry
 
-1. Copy an existing file in `src/content/prizes/` to `<year>-<field>.md`. Fields are `physics`, `chemistry`, `medicine`, `economics`, `literature`.
+1. Copy an existing file in `src/content/prizes/` to `<year>-<field>.md`. Fields are `physics`, `chemistry`, `medicine`, `economics`, `literature`, `peace`.
 2. The Markdown body is the "In plain terms" prose. The other three parts (`checks`, `preaching`, `shelf`) are lists in the front matter, and their strings accept inline Markdown.
 3. Mark each preaching point `likeness` (an image borrowed from the science, which proves nothing) or `instance` (a true story that is itself a case of what the text describes).
 4. Put open editorial items in `todo:`. They are never rendered.

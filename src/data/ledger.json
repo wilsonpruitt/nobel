@@ -30,6 +30,12 @@
     "summary": "Hungarian novelist of long, apocalyptic sentences and stubborn hope in art."
   },
   {
+    "year": 2025,
+    "field": "peace",
+    "laureates": "María Corina Machado",
+    "summary": "Her work for democratic rights in Venezuela and a peaceful move from dictatorship to democracy."
+  },
+  {
     "year": 2024,
     "field": "physics",
     "laureates": "John Hopfield, Geoffrey Hinton",
@@ -58,6 +64,12 @@
     "field": "literature",
     "laureates": "Han Kang",
     "summary": "South Korean novelist of historical trauma and the fragility of human life."
+  },
+  {
+    "year": 2024,
+    "field": "peace",
+    "laureates": "Nihon Hidankyo",
+    "summary": "Survivors of Hiroshima and Nagasaki, for working towards a world free of nuclear weapons."
   },
   {
     "year": 2023,
@@ -90,6 +102,12 @@
     "summary": "Norwegian playwright and novelist who gives voice to the unsayable."
   },
   {
+    "year": 2023,
+    "field": "peace",
+    "laureates": "Narges Mohammadi",
+    "summary": "Her fight against the oppression of women in Iran and for human rights and freedom for all."
+  },
+  {
     "year": 2022,
     "field": "physics",
     "laureates": "Alain Aspect, John Clauser, Anton Zeilinger",
@@ -118,6 +136,12 @@
     "field": "literature",
     "laureates": "Annie Ernaux",
     "summary": "French memoirist of class, shame and memory."
+  },
+  {
+    "year": 2022,
+    "field": "peace",
+    "laureates": "Ales Bialiatski, Memorial, Center for Civil Liberties",
+    "summary": "Human rights defenders in Belarus, Russia and Ukraine, documenting abuses of power and war crimes."
   },
   {
     "year": 2021,
@@ -150,6 +174,12 @@
     "summary": "Tanzanian-born novelist of colonialism and the refugee’s fate."
   },
   {
+    "year": 2021,
+    "field": "peace",
+    "laureates": "Maria Ressa, Dmitry Muratov",
+    "summary": "Two journalists, in the Philippines and Russia, for safeguarding freedom of expression."
+  },
+  {
     "year": 2020,
     "field": "physics",
     "laureates": "Roger Penrose, Reinhard Genzel, Andrea Ghez",
@@ -178,6 +208,12 @@
     "field": "literature",
     "laureates": "Louise Glück",
     "summary": "American poet of austere, personal lyric."
+  },
+  {
+    "year": 2020,
+    "field": "peace",
+    "laureates": "World Food Programme",
+    "summary": "Fighting hunger, and working to stop hunger being used as a weapon of war."
   },
   {
     "year": 2019,
@@ -210,6 +246,12 @@
     "summary": "Austrian writer of linguistic invention; a contested award."
   },
   {
+    "year": 2019,
+    "field": "peace",
+    "laureates": "Abiy Ahmed Ali",
+    "summary": "Ethiopia’s prime minister, for ending the border war with Eritrea."
+  },
+  {
     "year": 2018,
     "field": "physics",
     "laureates": "Arthur Ashkin, Gérard Mourou, Donna Strickland",
@@ -238,6 +280,12 @@
     "field": "literature",
     "laureates": "Olga Tokarczuk",
     "summary": "Polish novelist of border-crossing as a form of life. Awarded in 2019."
+  },
+  {
+    "year": 2018,
+    "field": "peace",
+    "laureates": "Denis Mukwege, Nadia Murad",
+    "summary": "Their work to end the use of sexual violence as a weapon of war."
   },
   {
     "year": 2017,
@@ -270,6 +318,12 @@
     "summary": "British novelist of memory, self-deception and loss."
   },
   {
+    "year": 2017,
+    "field": "peace",
+    "laureates": "International Campaign to Abolish Nuclear Weapons (ICAN)",
+    "summary": "Drawing attention to the humanitarian harm of nuclear weapons, and work towards a treaty banning them."
+  },
+  {
     "year": 2016,
     "field": "physics",
     "laureates": "David Thouless, Duncan Haldane, Michael Kosterlitz",
@@ -298,5 +352,11 @@
     "field": "literature",
     "laureates": "Bob Dylan",
     "summary": "New poetic expression within the American song tradition."
+  },
+  {
+    "year": 2016,
+    "field": "peace",
+    "laureates": "Juan Manuel Santos",
+    "summary": "Colombia’s president, for his efforts to end the country’s fifty-year civil war."
   }
 ]

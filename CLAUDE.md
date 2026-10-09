@@ -4,7 +4,7 @@ Plain-language explainers of recent Nobel Prizes for pastors, with a Wesleyan fr
 
 ## Conventions
 
-- One entry per prize in `src/content/prizes/<year>-<field>.md`; schema in `src/content.config.ts`. Prizes covered: physics, chemistry, medicine, economics, literature. Peace is out of scope.
+- One entry per prize in `src/content/prizes/<year>-<field>.md`; schema in `src/content.config.ts`. Prizes covered: physics, chemistry, medicine, economics, literature, peace. (Peace was wrongly excluded at first; added 2026-10-09.)
 - Every entry has the same four parts in the same order: In plain terms (Markdown body), Say it accurately (`checks`), For preaching (`preaching`), On the Wesleyan shelf (`shelf`).
 - A preaching point is a `likeness` or an `instance`. Do not blur them: a likeness borrows an image and proves nothing; an instance is a real case of what the text describes.
 - Science claims come from the Nobel press release and named reporting, listed in `sources`. Wesley is cited from the primary text, by title and scripture text or date. Quote Wesley only from a text that has been read; otherwise paraphrase and add a `todo:` CHECK item.
